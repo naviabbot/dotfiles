@@ -1,0 +1,21 @@
+#!/bin/bash
+
+if [ "$TERM" = "linux" ]; then
+	echo -en "\e]P01C1709" #black
+	echo -en "\e]P18e4317" #dk red
+	echo -en "\e]P2787200" #dk yellow
+	echo -en "\e]P3945c00" #dk orange
+	echo -en "\e]P4315094" #dk blue
+	echo -en "\e]P55c2e40" #dk prpl
+	echo -en "\e]P600617d" #dk cyan
+	echo -en "\e]P7c2b9a1" #dk grey
+	echo -en "\e]P84f4939" #lt black
+	echo -en "\e]P9f07935" #lt red
+	echo -en "\e]PAd9d138" #lt yellow
+	echo -en "\e]PBffab26" #lt orange
+	echo -en "\e]PC8aa9ed" #lt blue
+	echo -en "\e]PDff8cb8" #lt prpl
+	echo -en "\e]PE43bfe0" #lt cyan
+	echo -en "\e]PFf2e8c9" #white
+	clear
+fi
