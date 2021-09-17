@@ -1,0 +1,25 @@
+format = """
+$username\
+$hostname\
+$directory\
+$git_branch\
+$git_commit\
+$git_state\
+$hg_branch\
+$dart\
+$erlang\
+$golang\
+$ruby\
+$rust\
+$cmd_duration\
+$shell\
+$character"""
+
+[directory]
+truncation_length = 3
+truncate_to_repo = true
+style = "bold green"
+
+[username]
+show_always = true
+

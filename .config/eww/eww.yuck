@@ -1,0 +1,31 @@
+(defwidget bar []
+  (box :orientation "h"
+    (yo)
+    (clock)
+    (date)))
+
+(defpoll date-show :interval "1s"
+  `date +%m/%d/%y`)
+
+(defpoll clock-show :interval "1s"
+  `date +%H:%M:%S`)
+
+(defwidget clock []
+  (label :text clock-show))
+
+(defwidget date []
+  (label :text date-show))
+
+(defwidget yo []
+  (label :text "LibraTerm" :class "yo"))
+
+(defwindow bar
+  :monitor 0
+  :windowtype "dock"
+  :geometry (geometry :x "0%"
+                      :y "0%"
+                      :width "20%"
+                      :height "5px"
+                      :anchor "top right")
+  :reserve (struts :side "top" :distance "4%")
+  (bar))

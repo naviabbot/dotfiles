@@ -1,0 +1,11 @@
+account me@jdcain.me
+host mail.jdcain.me
+port 587
+from me@jdcain.me
+user me@jdcain.me
+passwordeval "pass me@jdcain.me"
+auth on
+tls on
+tls_trust_file	/etc/ssl/certs/ca-certificates.crt
+logfile /home/t3hyoshi/.config/msmtp/msmtp.log
+

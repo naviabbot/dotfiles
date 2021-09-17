@@ -1,0 +1,5 @@
+(in-package :stumpwm)
+(grename "Code")
+(gnew "Web")
+(gnew "Chat")
+(gnew "Scrot")
