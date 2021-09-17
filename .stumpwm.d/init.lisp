@@ -66,6 +66,9 @@
 (set-fg-color "#ebdef4")
 (set-bg-color "#1b1334")
 (set-font "-bitstream-bitstream vera sans mono-medium-r-normal-*-12-*-*-*-m-*-*-9")
+(setf *message-window-gravity* :bottom)
+(setf *message-window-input-gravity* :bottom)
+(setf *input-window-gravity* :bottom)
 
 ;; Gaps?
 (load-module "swm-gaps")
